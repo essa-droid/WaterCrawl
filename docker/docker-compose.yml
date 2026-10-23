@@ -168,7 +168,7 @@ services:
     command: [ "npm", "run", "serve" ]
 
   minio:
-    image: quay.io/minio/minio:RELEASE.2024-11-07T00-52-20Z
+    image: cgr.dev/chainguard/minio:latest
     restart: always
     volumes:
       - ./volumes/minio-data:/data
